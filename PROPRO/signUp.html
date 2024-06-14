@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>會員登入</title>
+    <!-- bootstrap用 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- icon用 -->
+    <script src="https://kit.fontawesome.com/4f407c5ec6.js" crossorigin="anonymous"></script>
+    <!-- google字型 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+    <!-- RWD -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ico -->
+    <link rel="shortcut icon" href="./img/favicobw.ico"/>
+    
+    <link rel="stylesheet" href="./會員登入.css">
+    
+</head>
+<body>
+    <!-- 隱藏式側欄 -->
+    <nav>
+        <div class="movebox">
+            <ul class="lists">
+                <li class="list"><a href="#aboutus">About Us</a></li>
+                <li class="list"><a href="#">Products</a></li>
+                <li class="list"><a href="#">Contacts</a></li>
+                <li class="list"><a href="./會員登入.html">Member</a></li>
+                <li class="list"><a href="#">Join Us</a></li>
+                
+            </ul>
+        </div>
+    </nav>
+    <!-- <section class="overlay"></section> -->
+    <!-- 電腦尺寸選單 -->
+    <div class="menu">
+        <a href="./個人網頁發表.html" class="logo">
+            <img src="./img/logo (2).png" alt="這是logo">
+        </a>
+        <a href="javascript:void(0)" class="menu2">
+            <i class="fa-solid fa-bars"></i>
+        </a>   
+        <p>yao yan @2024</p>
+    </div>
+    <!-- 手機尺寸選單 -->
+    <div class="menuphone">
+        <div class="tt">
+
+            <a href="./個人網頁發表.html" class="logo">
+                <img src="./img/logo (2).png" alt="這是logo">
+            </a>
+            <a href="javascript:void(0)" class="menu2">
+                <i class="fa-solid fa-bars"></i>
+            </a>   
+        </div>
+    </div>
+    <!-- 電腦尺寸搜尋列 -->
+    <div class="top">
+        <input type="text" placeholder="search">
+        <a href="#" class="seachtop">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </a>
+        <a href="#" class="buy">
+            <i class="fa-solid fa-bag-shopping"></i>
+        </a>
+    </div>
+
+    <div class="area1">
+        <div class="left1"></div>
+        <div class="right1">
+            <div class="box1">
+                <h1>Member login</h1>
+            </div>
+        
+            <div class="box2">
+                <div class="enter">
+                    <input type="email" placeholder="請輸入帳號" required></input>
+                    <span></span>
+                </div>
+                <p>Account</p>
+            </div>
+
+            <div class="box4">
+                <div class="enter">
+                    <input type="password" placeholder="請輸入密碼" required></input>
+                    <span></span>
+                </div>
+                <p>Password</p>
+            </div>
+        
+            <div class="box5">
+                <div class="enter">
+                    <input type="password" placeholder="請確認密碼" required></input>
+                    <span></span>
+                </div>
+                <p>Repeat Password</p>
+            </div>
+        
+            <div class="box6">
+                <button type="submit" class="btn btn-primary">Log In</button>
+            </div>
+         
+        </div>
+    </div>
+    <script src="./會員登入.js"></script>
+</body>
+</html>
