@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- RWD -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furnita</title>
+    <!-- bootstrap用 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- icon用 -->
+    <script src="https://kit.fontawesome.com/4f407c5ec6.js" crossorigin="anonymous"></script>
+    <!-- google字型 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+    <!-- ico -->
+    <link rel="shortcut icon" href="./img/favicobw.ico"/>
+    <!-- <link rel="bookmark" href="./img/favico.ico"/> -->
+    <!-- 自己的樣式 -->
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <!-- 隱藏式側欄 -->
+    <nav>
+        <div class="movebox">
+            <ul class="lists">
+                <li class="list"><a href="#aboutus">About Us</a></li>
+                <li class="list"><a href="#">Products</a></li>
+                <li class="list"><a href="#">Contacts</a></li>
+                <li class="list"><a href="./signUp.html">Member</a></li>
+                <li class="list"><a href="#">Join Us</a></li>
+                
+            </ul>
+        </div>
+    </nav>
+    <!-- <section class="overlay"></section> -->
+    <!-- 電腦尺寸選單 -->
+    <div class="menu">
+        <a href="./index.html" class="logo">
+            <img src="./img/logo (2).png" alt="這是logo">
+        </a>
+        <a href="javascript:void(0)" class="menu2">
+            <i class="fa-solid fa-bars"></i>
+        </a>   
+        <p>yao yan @2024</p>
+    </div>
+    <!-- 手機尺寸選單 -->
+    <div class="menuphone">
+        <div class="tt">
+
+            <a href="#" class="logo">
+                <img src="./img/logo (2).png" alt="這是logo">
+            </a>
+            <a href="javascript:void(0)" class="menu2">
+                <i class="fa-solid fa-bars"></i>
+            </a>   
+        </div>
+    </div>
+    <!-- 電腦尺寸搜尋列 -->
+    <div class="top">
+        <input type="text" placeholder="search">
+        <a href="#" class="seachtop">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </a>
+        <a href="#" class="buy">
+            <i class="fa-solid fa-bag-shopping"></i>
+        </a>
+    </div>
+    
+
+    <div class="area1">
+        <div class="left1"></div>
+        <div class="right1">
+            <!-- 圖片輪播 -->
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active bannersize">
+                      <img src="./img/banner-02.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item bannersize">
+                      <img src="./img/banner-03.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item bannersize">
+                      <img src="./img/banner_工作區域 4.png" class="d-block w-100" alt="...">
+                    </div>
+                    <!-- 方塊選單 -->
+                    <div class="carousel-indicators"> 
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                </div>
+                
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <!-- 左箭頭 -->
+                  <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span> -->
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <!-- 右箭頭 -->
+                    <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span> -->
+                </button>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="area2">
+        <div class="left2"></div>
+        <div class="right2">
+            <div class="area2top" id="aboutus">
+                <div class="textbox">
+                    <h2>About Us</h2>
+                    <p>Our story begins in 2018, when architect Slava Balbek and like-minded people started creating basic furniture for the hotel, office and apartment sectors.<br><br>Our team lacks affordable and high-quality Ukrainian-made furniture, so we try to fill this gap with our own hands.</p>
+                </div>
+                
+            </div>
+            <!-- 電腦版熱門商品區 -->
+            <div class="area2bottom">
+                <div class="one">
+                    <div class="product1">
+                        <a href="#" class="img">
+                            <div class="more">more_</div>
+                        </a>
+                        <a href="#" class="sofa">Node Armchair</a>
+                        <a href="#" class="money">€750.00</a>
+                    </div>
+                    <div class="product2">
+                        <a href="#" class="img">
+                            <div class="more">more_</div>
+                        </a>
+                        <a href="#" class="sofa">Plywood Foosball 2.0</a>
+                        <a href="#" class="money">€326.00</a>
+                    </div>
+                </div>
+                <div class="two">
+                    <div class="product3">
+                        <a href="#" class="img">
+                            <div class="more">more_</div>
+                        </a>
+                        <a href="#" class="sofa">Concrete chess</a>
+                        <a href="#" class="money">€253.90</a>
+                    </div>
+                    <div class="product4">
+                        <a href="#" class="img">
+                            <div class="more">more_</div>
+                        </a>
+                        <a href="#" class="sofa">BTS Chair</a>
+                        <a href="#" class="money">€489.00</a>
+                    </div>
+                </div>
+                <div class="three">
+                    <div class="product5">
+                        <a href="#" class="img">
+                            <div class="more">more_</div>
+                        </a>
+                        <a href="#" class="sofa">Flip Flop Chair</a>
+                        <a href="#" class="money">€340.08</a>
+                    </div>
+                    <div class="product6">
+                        <a href="#" class="img">
+                            <div class="more">more_</div>
+                        </a>
+                        <a href="#" class="sofa">SOAP Chaise Lounge</a>
+                        <a href="#" class="money">€980.20</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 手機板熱門商品區 -->
+            <div class="phone">
+                <div class="area2bottomphone">
+                    <img src="./img/沙發1.jpg" alt="" class="a">
+                    <img src="./img/遊戲台.jpg" alt="" class="b">
+                    <img src="./img/西洋棋.jpg" alt="" class="c">
+                    <img src="./img/綠椅.jpg" alt="" class="d">
+                    <img src="./img/小椅6.jpg" alt="" class="e">
+                    <img src="./img/藍椅.jpg" alt="" class="f">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="area3">
+        <!-- 橫向滑動 -->
+        <div class="container">
+            <div class="slider-wrapper">
+              <button id="prev-slide" class="slide-button material-symbols-rounded">
+                go_left
+              </button>
+              <ul class="image-list">
+                <li><img class="image-item" src="./img/椅子2.jpg" alt="img-1" /></li>
+                <li><img class="image-item" src="./img/沙發4.jpg" alt="img-2" /></li>
+                <li><img class="image-item" src="./img/躺椅5.jpg" alt="img-3" /></li>
+                <li><img class="image-item" src="./img/椅子3.jpg" alt="img-4" /></li>
+                <li><img class="image-item" src="./img/04.jpg" alt="img-5" /></li>
+                <li><img class="image-item" src="./img/02.jpg" alt="img-6" /></li>
+                <li><img class="image-item" src="./img/03.jpg" alt="img-7" /></li>
+                <li><img class="image-item" src="./img/06.jpg" alt="img-8" /></li>
+                <li><img class="image-item" src="./img/小椅6.jpg" alt="img-9" /></li>
+                <li><img class="image-item" src="./img/05.jpg" alt="img-10" /></li>
+              </ul>
+              <button id="next-slide" class="slide-button material-symbols-rounded">
+                go_right
+              </button>
+            </div>
+            <div class="slider-scrollbar">
+              <div class="scrollbar-track">
+                <div class="scrollbar-thumb"></div>
+              </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="area4">
+        <img src="./img/logo (2).png" alt="">
+        <div class="text">
+            <dl>
+                <dt>Informatio</dt>
+                <dd><a href="#">Privacy Policy</a></dd>
+                <dd><a href="#">Cookie Policy</a></dd>
+                <dd><a href="#">Terms of use of the Website</a></dd>
+            </dl>
+            <dl>
+                <dt>Customer care</dt>
+                <dd><a href="#">ya-ya5888@gmail.com</a></dd>
+                <dd><a href="#">(06)233-7366</a></dd>
+                <dd><a href="#">FAQ</a></dd>
+            </dl>
+            <dl>
+                <dt>Follow us on</dt>
+                <dd><a href="https://www.facebook.com/proprofurniture">Facebook</a></dd>
+                <dd><a href="https://www.instagram.com/proprofurniture/">Instagram</a></dd>
+                <dd><a href="#">Line</a></dd>
+            </dl>
+        </div>
+        <p>yao yan @2024</p>
+    </div>
+
+    <div class="goTop">
+        <a href="#" class="goTopBtn jq-goTop">
+            <i class="fa-solid fa-arrow-up"></i>
+        </a>
+    </div>
+    
+    
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <!-- jQuery cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
