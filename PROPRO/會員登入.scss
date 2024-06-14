@@ -1,0 +1,413 @@
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+$color1:#fff;
+$color2:#ededed;
+$color3:#cacaca;
+$color4:#4b4b4b;
+$color5:#161616;
+
+body{
+    nav{
+       z-index:2;
+       position: fixed;
+       top: 0;
+       left: -100%;
+       width: 100%;
+       height: 100dvh; 
+       background-color: $color2;
+       opacity:0.8;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       transition: all 0.5s ease;
+       .movebox{
+            
+           .list{
+               list-style: none;
+               a{
+                   font-family: "Courier Prime", monospace;    
+                   color: #777777;
+                   list-style: none;
+                   font-size: 40px;
+                   text-decoration:none;
+                   line-height: 80px;
+                   transition: 0.5s;
+                   &:hover{
+                    background: $color1;
+                    color: $color4;
+        
+                   }
+                }
+                
+            }
+        }
+    }
+   
+    nav.open{
+        left: 0;
+    }
+
+
+    .menu{
+        display: block;
+        z-index:2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        position:fixed;
+        left: 0;
+        top: 0;
+        // width: 131px;
+        width: 8.75%;
+        height: 100dvh; 
+        background:$color1 ;
+        padding: 5dvh 0 1dvh 0;
+        box-shadow: 1px 1px 5px -1px rgba(43, 43, 42, 0.2);
+        
+        .logo{
+            margin: 0 auto;
+            width: 5vw;
+            height: 5vw;
+            // border: 1px solid black;
+            img{
+                height: 1.5vw;
+            }
+
+        }
+        .menu2{
+            margin: 0 auto;
+            width: 5vw;
+            height: 5vw;
+            // border: 1px solid black;
+            text-align: center;
+            color:#777777;
+            i{
+                font-size: 1.4dvw;
+            }
+            transition: 0.5s;
+            &:hover{
+                color: $color4;
+                scale: 1.09;
+            }
+        }
+        p{
+            font-family: "Courier Prime", monospace;
+            color: $color4;
+            font-size: 14px;
+            margin-bottom: 9dvh;
+            transform: rotate(-90deg)
+        }
+    }
+    @media (max-width: 1250px) {
+        .menu{
+            display: none;
+        }
+    }
+
+    .menuphone{
+        display: none;
+        .tt{
+            z-index:2;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position:fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 70px; 
+            background:$color1 ;
+            padding: 16px;
+            padding-right: 19px;
+            box-shadow: 1px 1px 5px -1px rgba(43, 43, 42, 0.2);
+        
+            .logo{
+                img{
+                    height: 4.5dvh;
+                }
+                @media (max-width: 500px) {
+                    img{
+                        height: 3.5dvh;
+                    }
+                }
+            }
+            
+            .menu2{
+                line-height: 30px;
+                text-align: center;
+                color:#777777;
+                i{
+                    font-size: 2.7dvh;
+                }
+                @media (max-width: 500px) {
+                    i{
+                        font-size: 2dvh;
+                    }
+                }
+                transition: 0.5s;
+                &:hover{
+                    color: $color4;
+                    scale: 1.09;
+                }
+                
+            }
+        }
+        @media (max-width: 500px) {
+            .tt{
+                height: 50px;
+                padding: 10px;
+                padding-right: 14px; 
+            }
+        }
+        
+    }
+    @media (max-width: 1250px) {
+        .menuphone{
+            display: block;
+        }
+    }
+
+    
+
+    //電腦尺寸搜尋列
+    .top{
+        
+        z-index: 3;
+        display: flex;
+        align-items: center;
+        position:fixed;
+        right: 0;
+        top: 0;
+        padding: 5dvh;
+        input{
+            width: 200px;
+            height: 30px;
+            border-radius: 15px;
+            padding-left: 14px;
+            outline:none ;
+            box-shadow: 1px 1px 5px -1px rgba(43, 43, 42, 0.1);
+        }
+
+        ::placeholder{
+            font-family: "Courier Prime", monospace;
+            font-size: 14px;
+            color: $color3;
+            padding-left: 2px;
+        }
+
+        .seachtop{
+            position: relative;
+            left: -28px;
+            
+            i{
+                color:$color4;
+            }
+        }
+        .buy{
+            width: 32px;
+            height: 32px;
+            background: $color1;
+            border-radius: 16px;
+            text-align: center;
+            box-shadow: 1px 1px 5px -1px rgba(43, 43, 42, 0.2);
+            i{
+                line-height: 32px;
+                color: $color4;
+            }
+        }
+        
+    }
+    @media (max-width: 1250px) {
+        .top{
+            right: 4.5dvh;
+            scale: 0.9;
+            padding: 10px;
+            top: 7px;
+        }
+    }
+    @media (max-width: 500px) {
+        .top{
+            right: 1dvh;
+            scale: 0.8;
+            padding: 10px;
+            top: 0;
+        }
+    }
+
+   
+}
+
+.area1{
+    width: 100%;
+    height: 100dvh;
+    display:flex;
+    .left1{
+        display: block;
+        width: 8.75%;
+        
+    }
+    @media (max-width: 1250px) {
+        .left1{
+            display: none;
+        }
+    }
+    
+    .right1{ 
+        width: 91.25%;
+        background:$color2;
+        p{
+            margin-bottom: 0;
+            color: $color4;
+            width: 100%;
+            height: 4dvh;
+            line-height: 4dvh;
+            font-family: "Courier Prime", monospace;
+            font-size: 14px;
+        }
+
+        .enter{
+            width: 100%;
+            height: 6dvh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 1px solid $color4;
+            
+            p{
+                font-size: 14px;
+            }
+            
+            input{
+                height: 80%;
+                width: 70%;
+                background-color: transparent;
+                outline: none;
+                color: $color4;
+            }
+            ::placeholder{
+                font-family: "Courier Prime", monospace;
+                font-size: 17px;
+                color: #a2a2a2;
+                // padding-left: 12%;
+                text-align: center;
+            }
+        }
+
+        .box1{
+            height: 10dvh;
+        
+            h1{
+                font-family: "Courier Prime", monospace;
+                text-align: center;
+                margin-top: 22dvh;
+                font-weight: 400;
+                color: $color4;
+                font-size: 29px;
+            }
+        }
+        
+        .box2{
+            width: 40dvh;
+            height: 10dvh;
+            margin: 0 auto;
+        
+        }
+        
+        .box4{
+            width: 40dvh;
+            height: 10dvh;
+            margin: 1dvh auto;
+            
+        }
+        
+        .box5{
+            width: 40dvh;
+            height: 10dvh;
+            margin: 1dvh auto;
+            
+        }
+        
+        .box6{
+            height: 30dvh;
+            // border: 1px solid black;
+            display: flex;
+            justify-content: center;
+        
+            button{
+                width: 109px;
+                height: 37px;
+                border-radius: 32px;
+                font-size: 17px;
+                margin-top: 3dvh;
+                background-color: $color3;
+                color: #fff;
+                font-family: "Courier Prime", monospace;
+                border-color:$color3 ;
+        
+                &:hover{
+                    background-color: #fff;
+                    color: #a2a2a2;
+                    border-color:#fff ;
+            
+                }
+            }
+        
+        }
+        @media (max-width: 500px) {
+            .box1{
+                scale: 0.8;
+            }
+            .box2{
+                scale: 0.8;
+            }
+            .box4{
+                scale: 0.8;
+            }
+            .box5{
+                scale: 0.8;
+            }
+            .box6{
+                scale: 0.8;
+            }
+        }
+        
+    }
+    @media (max-width: 1250px) {
+        .right1{
+            width: 100%;
+        }
+    }
+}
+
+input + span {
+    position: relative;
+}
+  
+input + span::before {
+    
+    right: -20px;
+    top: 5px;
+}
+  
+// input:invalid {
+//     // border: 2px solid rgb(143, 28, 28);
+// }
+  
+input:invalid + span::before {
+    content: "✖";
+    font-family: "Courier Prime", monospace;
+    margin-left: 1dvh;
+    color: rgb(219, 82, 82);
+}
+  
+input:valid + span::before {
+    content: "✓";
+    font-family: "Courier Prime", monospace;
+    margin-left: 1dvh;
+    font-size: 19px;
+    color: rgb(117, 184, 238);
+}

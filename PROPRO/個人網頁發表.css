@@ -1,0 +1,920 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+.courier-prime-regular {
+  font-family: "Courier Prime", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body nav {
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100dvh;
+  background-color: #ededed;
+  opacity: 0.8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+body nav .movebox .list {
+  list-style: none;
+}
+body nav .movebox .list a {
+  font-family: "Courier Prime", monospace;
+  color: #777777;
+  list-style: none;
+  font-size: 40px;
+  text-decoration: none;
+  line-height: 80px;
+  transition: 0.5s;
+}
+body nav .movebox .list a:hover {
+  background: #fff;
+  color: #4b4b4b;
+}
+body nav.open {
+  left: 0;
+}
+body .menu {
+  display: block;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 8.75%;
+  height: 100dvh;
+  background: #fff;
+  padding: 5dvh 0 1dvh 0;
+  box-shadow: 1px 1px 5px -1px rgba(43, 43, 42, 0.2);
+}
+body .menu .logo {
+  margin: 0 auto;
+  width: 5vw;
+  height: 5vw;
+}
+body .menu .logo img {
+  height: 1.5vw;
+}
+body .menu .menu2 {
+  margin: 0 auto;
+  width: 5vw;
+  height: 5vw;
+  text-align: center;
+  color: #777777;
+  transition: 0.5s;
+}
+body .menu .menu2 i {
+  font-size: 1.4dvw;
+}
+body .menu .menu2:hover {
+  color: #4b4b4b;
+  scale: 1.09;
+}
+body .menu p {
+  font-family: "Courier Prime", monospace;
+  color: #4b4b4b;
+  font-size: 14px;
+  margin-bottom: 9dvh;
+  transform: rotate(-90deg);
+}
+@media (max-width: 1250px) {
+  body .menu {
+    display: none;
+  }
+}
+body .menuphone {
+  display: none;
+}
+body .menuphone .tt {
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  background: #fff;
+  padding: 16px;
+  padding-right: 19px;
+  box-shadow: 1px 1px 5px -1px rgba(43, 43, 42, 0.2);
+}
+body .menuphone .tt .logo img {
+  height: 4.5dvh;
+}
+@media (max-width: 500px) {
+  body .menuphone .tt .logo img {
+    height: 3.5dvh;
+  }
+}
+body .menuphone .tt .menu2 {
+  line-height: 30px;
+  text-align: center;
+  color: #777777;
+  transition: 0.5s;
+}
+body .menuphone .tt .menu2 i {
+  font-size: 2.7dvh;
+}
+@media (max-width: 500px) {
+  body .menuphone .tt .menu2 i {
+    font-size: 2dvh;
+  }
+}
+body .menuphone .tt .menu2:hover {
+  color: #4b4b4b;
+  scale: 1.09;
+}
+@media (max-width: 500px) {
+  body .menuphone .tt {
+    height: 50px;
+    padding: 10px;
+    padding-right: 14px;
+  }
+}
+@media (max-width: 1250px) {
+  body .menuphone {
+    display: block;
+  }
+}
+body .top {
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  right: 0;
+  top: 0;
+  padding: 5dvh;
+}
+body .top input {
+  width: 200px;
+  height: 30px;
+  border-radius: 15px;
+  padding-left: 14px;
+  outline: none;
+  color: #4b4b4b;
+  font-family: "Courier Prime", monospace;
+  box-shadow: 1px 1px 5px -1px rgba(43, 43, 42, 0.1);
+}
+body .top ::-moz-placeholder {
+  font-family: "Courier Prime", monospace;
+  font-size: 15px;
+  color: #cacaca;
+  padding-left: 2px;
+}
+body .top ::placeholder {
+  font-family: "Courier Prime", monospace;
+  font-size: 15px;
+  color: #cacaca;
+  padding-left: 2px;
+}
+body .top .seachtop {
+  position: relative;
+  left: -28px;
+}
+body .top .seachtop i {
+  color: #4b4b4b;
+}
+body .top .buy {
+  width: 32px;
+  height: 32px;
+  background: #fff;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 1px 1px 5px -1px rgba(43, 43, 42, 0.2);
+}
+body .top .buy i {
+  line-height: 32px;
+  color: #4b4b4b;
+}
+@media (max-width: 1250px) {
+  body .top {
+    right: 4.5dvh;
+    scale: 0.9;
+    padding: 10px;
+    top: 7px;
+  }
+}
+@media (max-width: 500px) {
+  body .top {
+    right: 1dvh;
+    scale: 0.8;
+    padding: 10px;
+    top: 0;
+  }
+}
+
+.area1 {
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+}
+.area1 .left1 {
+  display: block;
+  width: 8.75%;
+}
+@media (max-width: 1250px) {
+  .area1 .left1 {
+    display: none;
+  }
+}
+.area1 .right1 {
+  background: #ededed;
+}
+.area1 .right1 .carousel-inner {
+  position: relative;
+}
+.area1 .right1 .carousel-inner .carousel-item {
+  height: 100dvh;
+  width: 100dvw;
+}
+@media (max-width: 1250px) {
+  .area1 .right1 .carousel-inner .carousel-item {
+    height: auto;
+  }
+}
+.area1 .right1 .carousel-inner .carousel-indicators {
+  position: absolute;
+  bottom: 0;
+}
+
+.area2 {
+  width: 100%;
+  height: 350dvh;
+  display: flex;
+  overflow: hidden;
+}
+.area2 .left2 {
+  display: block;
+  width: 8.75%;
+  height: 350dvh;
+  background: transparent;
+}
+@media (max-width: 1250px) {
+  .area2 .left2 {
+    display: none;
+  }
+}
+.area2 .right2 {
+  width: 91.25%;
+  height: 360dvh;
+  background: #4b4b4b;
+  background-image: linear-gradient(to top, #ededed, #4b4b4b);
+}
+.area2 .right2 .area2top {
+  display: flex;
+  width: 100%;
+  height: 105dvh;
+  justify-content: center;
+  position: relative;
+  background-image: url(./img/介紹.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+.area2 .right2 .area2top .textbox {
+  position: absolute;
+  left: 0;
+  width: 300px;
+  height: 73dvh;
+  background: #ededed;
+  padding: 69px 35px 0;
+}
+.area2 .right2 .area2top .textbox h2 {
+  font-family: "Courier Prime", monospace;
+  color: #4b4b4b;
+  font-size: 29px;
+}
+.area2 .right2 .area2top .textbox p {
+  font-family: "Courier Prime", monospace;
+  display: block;
+  margin-top: 30px;
+  color: #4b4b4b;
+}
+@media (max-width: 1250px) {
+  .area2 .right2 .area2top .textbox {
+    scale: 0.7;
+    left: auto;
+    padding-top: 26px;
+    height: auto;
+    width: 80%;
+    bottom: -1dvh;
+    font-size: large;
+    background-color: rgba(237, 237, 237, 0.8470588235);
+  }
+}
+@media (max-width: 500px) {
+  .area2 .right2 .area2top .textbox {
+    scale: 0.5;
+    width: auto;
+    bottom: -6dvh;
+  }
+}
+@media (max-width: 1250px) {
+  .area2 .right2 .area2top {
+    overflow-x: hidden;
+    background-size: cover;
+    background-position: left;
+    height: 88dvh;
+    width: 100dvw;
+  }
+}
+@media (max-width: 500px) {
+  .area2 .right2 .area2top {
+    background-position: -19dvw;
+    height: 61dvh;
+  }
+}
+.area2 .right2 .area2bottom {
+  display: block;
+}
+.area2 .right2 .area2bottom .one {
+  display: flex;
+  width: 100%;
+  height: 80dvh;
+}
+.area2 .right2 .area2bottom .one .product1 {
+  width: 50%;
+  position: relative;
+  margin: 6dvh 10dvh;
+}
+.area2 .right2 .area2bottom .one .product1 a {
+  text-decoration: none;
+  color: #ededed;
+  font-family: "Courier Prime", monospace;
+  font-size: 18px;
+}
+.area2 .right2 .area2bottom .one .product1 .img {
+  display: block;
+  width: 445px;
+  height: 534px;
+  background-image: url(./img/沙發1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 1s;
+}
+.area2 .right2 .area2bottom .one .product1 .img .more {
+  width: 445px;
+  height: 534px;
+  background-color: #161616;
+  opacity: 0;
+  font-size: 25px;
+  text-align: center;
+  line-height: 534px;
+  transition: 1s;
+}
+.area2 .right2 .area2bottom .one .product1 .img .more:hover {
+  opacity: 0.6;
+}
+.area2 .right2 .area2bottom .one .product1 .img:hover {
+  scale: 1.09;
+}
+.area2 .right2 .area2bottom .one .product1 .money {
+  position: absolute;
+  right: 0;
+  font-size: 15px;
+}
+.area2 .right2 .area2bottom .one .product2 {
+  display: block;
+  width: 50%;
+  position: relative;
+  margin-top: 14dvh;
+  margin-left: 15dvh;
+}
+.area2 .right2 .area2bottom .one .product2 a {
+  text-decoration: none;
+  color: #ededed;
+  font-family: "Courier Prime", monospace;
+  font-size: 18px;
+}
+.area2 .right2 .area2bottom .one .product2 .img {
+  display: block;
+  width: 672px;
+  height: 448px;
+  background-image: url(./img/遊戲台.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 1s;
+}
+.area2 .right2 .area2bottom .one .product2 .img .more {
+  display: block;
+  width: 672px;
+  height: 448px;
+  background-color: #161616;
+  opacity: 0;
+  font-size: 25px;
+  text-align: center;
+  line-height: 448px;
+  transition: 1s;
+}
+.area2 .right2 .area2bottom .one .product2 .img .more:hover {
+  opacity: 0.6;
+}
+.area2 .right2 .area2bottom .one .product2 .img:hover {
+  scale: 1.098;
+}
+.area2 .right2 .area2bottom .one .product2 .money {
+  position: absolute;
+  right: 0;
+  font-size: 15px;
+}
+.area2 .right2 .area2bottom .two {
+  display: flex;
+  width: 100%;
+  height: 80dvh;
+}
+.area2 .right2 .area2bottom .two .product3 {
+  width: 724px;
+  position: relative;
+  margin: 15dvh 0dvh;
+}
+.area2 .right2 .area2bottom .two .product3 a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Courier Prime", monospace;
+  font-size: 18px;
+}
+.area2 .right2 .area2bottom .two .product3 .img {
+  display: block;
+  width: 724px;
+  height: 419px;
+  background-image: url(./img/西洋棋.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 1s;
+}
+.area2 .right2 .area2bottom .two .product3 .img .more {
+  width: 724px;
+  height: 419px;
+  background-color: #161616;
+  opacity: 0;
+  font-size: 25px;
+  text-align: center;
+  line-height: 419px;
+  transition: 1s;
+}
+.area2 .right2 .area2bottom .two .product3 .img .more:hover {
+  opacity: 0.6;
+}
+.area2 .right2 .area2bottom .two .product3 .img:hover {
+  scale: 1.09;
+}
+.area2 .right2 .area2bottom .two .product3 .money {
+  position: absolute;
+  right: 0;
+  font-size: 15px;
+}
+.area2 .right2 .area2bottom .two .product4 {
+  display: block;
+  width: 420px;
+  position: relative;
+  margin-top: 4dvh;
+  margin-left: 20dvh;
+}
+.area2 .right2 .area2bottom .two .product4 a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Courier Prime", monospace;
+  font-size: 18px;
+}
+.area2 .right2 .area2bottom .two .product4 .img {
+  display: block;
+  width: 420px;
+  height: 600px;
+  background-image: url(./img/綠椅.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 1s;
+}
+.area2 .right2 .area2bottom .two .product4 .img .more {
+  width: 420px;
+  height: 600px;
+  background-color: #161616;
+  opacity: 0;
+  font-size: 25px;
+  text-align: center;
+  line-height: 600px;
+  transition: 1s;
+}
+.area2 .right2 .area2bottom .two .product4 .img .more:hover {
+  opacity: 0.6;
+}
+.area2 .right2 .area2bottom .two .product4 .img:hover {
+  scale: 1.098;
+}
+.area2 .right2 .area2bottom .two .product4 .money {
+  position: absolute;
+  right: 0;
+  font-size: 15px;
+}
+.area2 .right2 .area2bottom .three {
+  display: flex;
+  width: 100%;
+  height: 80dvh;
+}
+.area2 .right2 .area2bottom .three .product5 {
+  width: 430px;
+  position: relative;
+  margin-top: 7dvh;
+  margin-left: 5dvh;
+}
+.area2 .right2 .area2bottom .three .product5:hover a {
+  color: #fff;
+}
+.area2 .right2 .area2bottom .three .product5 a {
+  text-decoration: none;
+  color: #4b4b4b;
+  font-family: "Courier Prime", monospace;
+  font-size: 18px;
+  transition: 1s;
+}
+.area2 .right2 .area2bottom .three .product5 .img {
+  display: block;
+  width: 430px;
+  height: 550px;
+  background-image: url(./img/小椅6.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 1s;
+}
+.area2 .right2 .area2bottom .three .product5 .img .more {
+  width: 430px;
+  height: 550px;
+  background-color: #161616;
+  opacity: 0;
+  font-size: 25px;
+  text-align: center;
+  line-height: 550px;
+  transition: 1s;
+}
+.area2 .right2 .area2bottom .three .product5 .img .more:hover {
+  opacity: 0.6;
+  color: #fff;
+}
+.area2 .right2 .area2bottom .three .product5 .img:hover {
+  scale: 1.098;
+}
+.area2 .right2 .area2bottom .three .product5 .money {
+  position: absolute;
+  right: 0;
+  font-size: 15px;
+}
+.area2 .right2 .area2bottom .three .product6 {
+  display: block;
+  width: 561px;
+  position: relative;
+  margin-top: 20dvh;
+  margin-left: 20dvh;
+}
+.area2 .right2 .area2bottom .three .product6:hover a {
+  color: #fff;
+}
+.area2 .right2 .area2bottom .three .product6 a {
+  text-decoration: none;
+  color: #4b4b4b;
+  font-family: "Courier Prime", monospace;
+  font-size: 18px;
+  transition: 1s;
+}
+.area2 .right2 .area2bottom .three .product6 .img {
+  display: block;
+  width: 561px;
+  height: 374px;
+  background-image: url(./img/藍椅.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 1s;
+}
+.area2 .right2 .area2bottom .three .product6 .img .more {
+  width: 561px;
+  height: 374px;
+  background-color: #161616;
+  opacity: 0;
+  font-size: 25px;
+  text-align: center;
+  line-height: 374px;
+  transition: 1s;
+}
+.area2 .right2 .area2bottom .three .product6 .img .more:hover {
+  opacity: 0.6;
+  color: #fff;
+}
+.area2 .right2 .area2bottom .three .product6 .img:hover {
+  scale: 1.13;
+}
+.area2 .right2 .area2bottom .three .product6 .money {
+  position: absolute;
+  right: 0;
+  font-size: 15px;
+}
+@media (max-width: 1250px) {
+  .area2 .right2 .area2bottom {
+    display: none;
+  }
+}
+.area2 .right2 .phone {
+  display: none;
+}
+.area2 .right2 .phone .area2bottomphone {
+  display: flex;
+  flex-wrap: wrap;
+}
+.area2 .right2 .phone .area2bottomphone .a {
+  width: 30%;
+}
+.area2 .right2 .phone .area2bottomphone .b {
+  width: 70%;
+}
+.area2 .right2 .phone .area2bottomphone .c {
+  width: 70%;
+}
+.area2 .right2 .phone .area2bottomphone .d {
+  width: 30%;
+}
+.area2 .right2 .phone .area2bottomphone .e {
+  width: 40%;
+}
+.area2 .right2 .phone .area2bottomphone .f {
+  width: 60%;
+}
+@media (max-width: 1250px) {
+  .area2 .right2 .phone {
+    display: block;
+  }
+}
+@media (max-width: 1250px) {
+  .area2 .right2 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1250px) {
+  .area2 {
+    height: 230dvw;
+    z-index: 0;
+  }
+}
+.area3 {
+  z-index: 2;
+  position: relative;
+  width: 100%;
+  height: 40dvh;
+  background: #ededed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.area3 .container {
+  max-width: 1200px;
+  width: 95%;
+}
+.area3 .container .slider-scrollbar {
+  height: 24px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.area3 .container .slider-scrollbar .scrollbar-track {
+  background: #ccc;
+  width: 100%;
+  height: 2px;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  position: relative;
+}
+.area3 .container .slider-scrollbar:hover .scrollbar-track {
+  height: 2.5px;
+}
+.area3 .container .slider-scrollbar .scrollbar-thumb {
+  position: absolute;
+  background: #4b4b4b;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  height: 100%;
+  cursor: grab;
+  border-radius: inherit;
+}
+.area3 .container .slider-scrollbar .scrollbar-thumb:active {
+  cursor: grabbing;
+  height: 4px;
+  top: -2px;
+}
+.area3 .container .slider-scrollbar .scrollbar-thumb ::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -10px;
+  bottom: -10px;
+}
+.area3 .slider-wrapper {
+  position: relative;
+}
+.area3 .slider-wrapper .slide-button {
+  font-family: "Courier Prime", monospace;
+  position: absolute;
+  top: 21%;
+  outline: none;
+  border: none;
+  height: 50px;
+  width: 50px;
+  z-index: 5;
+  color: #4b4b4b;
+  display: flex;
+  cursor: pointer;
+  font-size: 1.2rem;
+  background: #fff;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  transition: 0.3s;
+}
+.area3 .slider-wrapper .slide-button:hover {
+  background: #ededed;
+  font-size: 1.5rem;
+}
+.area3 .slider-wrapper .image-list {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 18px;
+  font-size: 0;
+  list-style: none;
+  margin-bottom: 30px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.area3 .slider-wrapper .image-list ::-webkit-scrollbar {
+  display: none;
+}
+.area3 .slider-wrapper .image-list .image-item {
+  width: 325px;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 1s;
+}
+.area3 .slider-wrapper .image-list .image-item:hover {
+  display: block;
+  width: 422.5px;
+  height: 520px;
+}
+.area3 .slider-wrapper .slide-button#prev-slide {
+  left: -25px;
+  display: none;
+}
+.area3 .slider-wrapper .slide-button#next-slide {
+  right: -25px;
+}
+@media only screen and (max-width: 1223px) {
+  .area3 .slider-wrapper .slide-button {
+    display: none !important;
+  }
+  .area3 .slider-wrapper .image-list {
+    gap: 10px;
+    margin-bottom: 15px;
+    scroll-snap-type: x mandatory;
+  }
+  .area3 .slider-wrapper .image-list .image-item {
+    width: 220px;
+    height: 270px;
+  }
+  .area3 .slider-wrapper .image-list .image-item:hover {
+    width: 220px;
+    height: 270px;
+  }
+  .area3 .slider-scrollbar .scrollbar-thumb {
+    width: 20%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .area3 .slider-wrapper .image-list .image-item {
+    width: 163px;
+    height: 186px;
+  }
+  .area3 .slider-wrapper .image-list .image-item:hover {
+    width: 163px;
+    height: 186px;
+  }
+  .area3 .slider-scrollbar .scrollbar-thumb {
+    width: 20%;
+  }
+}
+
+@media (max-width: 1023px) {
+  .area3 {
+    z-index: 0;
+    height: 54vh;
+    min-height: 54dvw;
+  }
+}
+.area4 {
+  z-index: 2;
+  position: relative;
+  width: 100%;
+  height: 50dvh;
+  background: #fff;
+  padding: 30px;
+}
+.area4 img {
+  height: 50px;
+}
+.area4 .text {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 8dvh;
+}
+.area4 .text dl dt {
+  font-family: "Courier Prime", monospace;
+  font-size: 18px;
+  font-weight: 700;
+  color: #4b4b4b;
+}
+.area4 .text dl dd {
+  font-family: "Courier Prime", monospace;
+  font-size: 14px;
+  line-height: 14px;
+  margin-top: 1.5dvh;
+}
+.area4 .text dl dd a {
+  color: #4b4b4b;
+}
+.area4 .text dl dd a:hover {
+  color: rgb(117, 184, 238);
+}
+.area4 p {
+  height: 20px;
+  font-family: "Courier Prime", monospace;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  margin-top: 70px;
+  color: #4b4b4b;
+}
+@media (max-width: 750px) {
+  .area4 .text {
+    flex-wrap: wrap;
+  }
+  .area4 dl {
+    width: 51%;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .area4 .text {
+    flex-wrap: wrap;
+  }
+  .area4 dl {
+    width: 70%;
+    margin-top: 20px;
+  }
+}
+
+.goTop {
+  z-index: 4;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  transform: translateX(0);
+  transition: transform 0.2s;
+}
+.goTop.hide {
+  transform: translateX(120%);
+}
+.goTop .goTopBtn {
+  display: block;
+  text-align: center;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  border: 1px solid #4b4b4b;
+  margin: 0 30px 25px 0;
+  transition: 0.7s;
+}
+.goTop .goTopBtn .fa-solid {
+  color: #4b4b4b;
+  line-height: 30px;
+}
+.goTop .goTopBtn:hover {
+  scale: 1.09;
+}/*# sourceMappingURL=個人網頁發表.css.map */

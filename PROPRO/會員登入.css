@@ -1,0 +1,362 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body nav {
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100dvh;
+  background-color: #ededed;
+  opacity: 0.8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+body nav .movebox .list {
+  list-style: none;
+}
+body nav .movebox .list a {
+  font-family: "Courier Prime", monospace;
+  color: #777777;
+  list-style: none;
+  font-size: 40px;
+  text-decoration: none;
+  line-height: 80px;
+  transition: 0.5s;
+}
+body nav .movebox .list a:hover {
+  background: #fff;
+  color: #4b4b4b;
+}
+body nav.open {
+  left: 0;
+}
+body .menu {
+  display: block;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 8.75%;
+  height: 100dvh;
+  background: #fff;
+  padding: 5dvh 0 1dvh 0;
+  box-shadow: 1px 1px 5px -1px rgba(43, 43, 42, 0.2);
+}
+body .menu .logo {
+  margin: 0 auto;
+  width: 5vw;
+  height: 5vw;
+}
+body .menu .logo img {
+  height: 1.5vw;
+}
+body .menu .menu2 {
+  margin: 0 auto;
+  width: 5vw;
+  height: 5vw;
+  text-align: center;
+  color: #777777;
+  transition: 0.5s;
+}
+body .menu .menu2 i {
+  font-size: 1.4dvw;
+}
+body .menu .menu2:hover {
+  color: #4b4b4b;
+  scale: 1.09;
+}
+body .menu p {
+  font-family: "Courier Prime", monospace;
+  color: #4b4b4b;
+  font-size: 14px;
+  margin-bottom: 9dvh;
+  transform: rotate(-90deg);
+}
+@media (max-width: 1250px) {
+  body .menu {
+    display: none;
+  }
+}
+body .menuphone {
+  display: none;
+}
+body .menuphone .tt {
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  background: #fff;
+  padding: 16px;
+  padding-right: 19px;
+  box-shadow: 1px 1px 5px -1px rgba(43, 43, 42, 0.2);
+}
+body .menuphone .tt .logo img {
+  height: 4.5dvh;
+}
+@media (max-width: 500px) {
+  body .menuphone .tt .logo img {
+    height: 3.5dvh;
+  }
+}
+body .menuphone .tt .menu2 {
+  line-height: 30px;
+  text-align: center;
+  color: #777777;
+  transition: 0.5s;
+}
+body .menuphone .tt .menu2 i {
+  font-size: 2.7dvh;
+}
+@media (max-width: 500px) {
+  body .menuphone .tt .menu2 i {
+    font-size: 2dvh;
+  }
+}
+body .menuphone .tt .menu2:hover {
+  color: #4b4b4b;
+  scale: 1.09;
+}
+@media (max-width: 500px) {
+  body .menuphone .tt {
+    height: 50px;
+    padding: 10px;
+    padding-right: 14px;
+  }
+}
+@media (max-width: 1250px) {
+  body .menuphone {
+    display: block;
+  }
+}
+body .top {
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  right: 0;
+  top: 0;
+  padding: 5dvh;
+}
+body .top input {
+  width: 200px;
+  height: 30px;
+  border-radius: 15px;
+  padding-left: 14px;
+  outline: none;
+  box-shadow: 1px 1px 5px -1px rgba(43, 43, 42, 0.1);
+}
+body .top ::-moz-placeholder {
+  font-family: "Courier Prime", monospace;
+  font-size: 14px;
+  color: #cacaca;
+  padding-left: 2px;
+}
+body .top ::placeholder {
+  font-family: "Courier Prime", monospace;
+  font-size: 14px;
+  color: #cacaca;
+  padding-left: 2px;
+}
+body .top .seachtop {
+  position: relative;
+  left: -28px;
+}
+body .top .seachtop i {
+  color: #4b4b4b;
+}
+body .top .buy {
+  width: 32px;
+  height: 32px;
+  background: #fff;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 1px 1px 5px -1px rgba(43, 43, 42, 0.2);
+}
+body .top .buy i {
+  line-height: 32px;
+  color: #4b4b4b;
+}
+@media (max-width: 1250px) {
+  body .top {
+    right: 4.5dvh;
+    scale: 0.9;
+    padding: 10px;
+    top: 7px;
+  }
+}
+@media (max-width: 500px) {
+  body .top {
+    right: 1dvh;
+    scale: 0.8;
+    padding: 10px;
+    top: 0;
+  }
+}
+
+.area1 {
+  width: 100%;
+  height: 100dvh;
+  display: flex;
+}
+.area1 .left1 {
+  display: block;
+  width: 8.75%;
+}
+@media (max-width: 1250px) {
+  .area1 .left1 {
+    display: none;
+  }
+}
+.area1 .right1 {
+  width: 91.25%;
+  background: #ededed;
+}
+.area1 .right1 p {
+  margin-bottom: 0;
+  color: #4b4b4b;
+  width: 100%;
+  height: 4dvh;
+  line-height: 4dvh;
+  font-family: "Courier Prime", monospace;
+  font-size: 14px;
+}
+.area1 .right1 .enter {
+  width: 100%;
+  height: 6dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #4b4b4b;
+}
+.area1 .right1 .enter p {
+  font-size: 14px;
+}
+.area1 .right1 .enter input {
+  height: 80%;
+  width: 70%;
+  background-color: transparent;
+  outline: none;
+  color: #4b4b4b;
+}
+.area1 .right1 .enter ::-moz-placeholder {
+  font-family: "Courier Prime", monospace;
+  font-size: 17px;
+  color: #a2a2a2;
+  text-align: center;
+}
+.area1 .right1 .enter ::placeholder {
+  font-family: "Courier Prime", monospace;
+  font-size: 17px;
+  color: #a2a2a2;
+  text-align: center;
+}
+.area1 .right1 .box1 {
+  height: 10dvh;
+}
+.area1 .right1 .box1 h1 {
+  font-family: "Courier Prime", monospace;
+  text-align: center;
+  margin-top: 22dvh;
+  font-weight: 400;
+  color: #4b4b4b;
+  font-size: 29px;
+}
+.area1 .right1 .box2 {
+  width: 40dvh;
+  height: 10dvh;
+  margin: 0 auto;
+}
+.area1 .right1 .box4 {
+  width: 40dvh;
+  height: 10dvh;
+  margin: 1dvh auto;
+}
+.area1 .right1 .box5 {
+  width: 40dvh;
+  height: 10dvh;
+  margin: 1dvh auto;
+}
+.area1 .right1 .box6 {
+  height: 30dvh;
+  display: flex;
+  justify-content: center;
+}
+.area1 .right1 .box6 button {
+  width: 109px;
+  height: 37px;
+  border-radius: 32px;
+  font-size: 17px;
+  margin-top: 3dvh;
+  background-color: #cacaca;
+  color: #fff;
+  font-family: "Courier Prime", monospace;
+  border-color: #cacaca;
+}
+.area1 .right1 .box6 button:hover {
+  background-color: #fff;
+  color: #a2a2a2;
+  border-color: #fff;
+}
+@media (max-width: 500px) {
+  .area1 .right1 .box1 {
+    scale: 0.8;
+  }
+  .area1 .right1 .box2 {
+    scale: 0.8;
+  }
+  .area1 .right1 .box4 {
+    scale: 0.8;
+  }
+  .area1 .right1 .box5 {
+    scale: 0.8;
+  }
+  .area1 .right1 .box6 {
+    scale: 0.8;
+  }
+}
+@media (max-width: 1250px) {
+  .area1 .right1 {
+    width: 100%;
+  }
+}
+
+input + span {
+  position: relative;
+}
+
+input + span::before {
+  right: -20px;
+  top: 5px;
+}
+
+input:invalid + span::before {
+  content: "✖";
+  font-family: "Courier Prime", monospace;
+  margin-left: 1dvh;
+  color: rgb(219, 82, 82);
+}
+
+input:valid + span::before {
+  content: "✓";
+  font-family: "Courier Prime", monospace;
+  margin-left: 1dvh;
+  font-size: 19px;
+  color: rgb(117, 184, 238);
+}/*# sourceMappingURL=會員登入.css.map */

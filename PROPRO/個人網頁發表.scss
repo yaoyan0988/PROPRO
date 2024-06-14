@@ -1,0 +1,1059 @@
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+$color1:#fff;
+$color2:#ededed;
+$color3:#cacaca;
+$color4:#4b4b4b;
+$color5:#161616;
+
+.courier-prime-regular {
+    font-family: "Courier Prime", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    nav{
+       z-index:2;
+       position: fixed;
+       top: 0;
+       left: -100%;
+       width: 100%;
+       height: 100dvh; 
+       background-color: $color2;
+       opacity:0.8;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       transition: all 0.5s ease;
+        .movebox{
+            
+            .list{
+               list-style: none;
+                a{
+                   font-family: "Courier Prime", monospace;    
+                   color: #777777;
+                   list-style: none;
+                   font-size: 40px;
+                   text-decoration:none;
+                   line-height: 80px;
+                   transition: 0.5s;
+                   &:hover{
+                    background: $color1;
+                    color: $color4;
+        
+                   }
+                }
+                
+            }
+        }
+    }
+   
+    nav.open{
+        left: 0;
+    }
+
+
+    .menu{
+        display: block;
+        z-index:2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        position:fixed;
+        left: 0;
+        top: 0;
+        // width: 131px;
+        width: 8.75%;
+        height: 100dvh; 
+        background:$color1 ;
+        padding: 5dvh 0 1dvh 0;
+        box-shadow: 1px 1px 5px -1px rgba(43, 43, 42, 0.2);
+        
+        .logo{
+            margin: 0 auto;
+            width: 5vw;
+            height: 5vw;
+            // border: 1px solid black;
+            img{
+                height: 1.5vw;
+            }
+
+        }
+        .menu2{
+            margin: 0 auto;
+            width: 5vw;
+            height: 5vw;
+            // border: 1px solid black;
+            text-align: center;
+            color:#777777;
+            i{
+                font-size: 1.4dvw;
+            }
+            transition: 0.5s;
+            &:hover{
+                color: $color4;
+                scale: 1.09;
+            }
+        }
+        p{
+            font-family: "Courier Prime", monospace;
+            color: $color4;
+            font-size: 14px;
+            margin-bottom: 9dvh;
+            transform: rotate(-90deg)
+        }
+    }
+    @media (max-width: 1250px) {
+        .menu{
+            display: none;
+        }
+    }
+
+    .menuphone{
+        display: none;
+        .tt{
+            z-index:2;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position:fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 70px; 
+            background:$color1 ;
+            padding: 16px;
+            padding-right: 19px;
+            box-shadow: 1px 1px 5px -1px rgba(43, 43, 42, 0.2);
+        
+            .logo{
+                img{
+                    height: 4.5dvh;
+                }
+                @media (max-width: 500px) {
+                    img{
+                        height: 3.5dvh;
+                    }
+                }
+            }
+            
+            .menu2{
+                line-height: 30px;
+                text-align: center;
+                color:#777777;
+                i{
+                    font-size: 2.7dvh;
+                }
+                @media (max-width: 500px) {
+                    i{
+                        font-size: 2dvh;
+                    }
+                }
+                transition: 0.5s;
+                &:hover{
+                    color: $color4;
+                    scale: 1.09;
+                }
+                
+            }
+        }
+        @media (max-width: 500px) {
+            .tt{
+                height: 50px;
+                padding: 10px;
+                padding-right: 14px; 
+            }
+        }
+        
+    }
+    @media (max-width: 1250px) {
+        .menuphone{
+            display: block;
+        }
+    }
+
+    
+
+    //搜尋列
+    .top{
+        
+        z-index: 3;
+        display: flex;
+        align-items: center;
+        position:fixed;
+        right: 0;
+        top: 0;
+        padding: 5dvh;
+        input{
+            width: 200px;
+            height: 30px;
+            border-radius: 15px;
+            padding-left: 14px;
+            outline:none ;
+            color: $color4;
+            font-family: "Courier Prime", monospace;
+            box-shadow: 1px 1px 5px -1px rgba(43, 43, 42, 0.1);
+        }
+
+        ::placeholder{
+            font-family: "Courier Prime", monospace;
+            font-size: 15px;
+            color: $color3;
+            padding-left: 2px;
+        }
+
+        .seachtop{
+            position: relative;
+            left: -28px;
+            
+            i{
+                color:$color4;
+            }
+        }
+        .buy{
+            width: 32px;
+            height: 32px;
+            background: $color1;
+            border-radius: 16px;
+            text-align: center;
+            box-shadow: 1px 1px 5px -1px rgba(43, 43, 42, 0.2);
+            i{
+                line-height: 32px;
+                color: $color4;
+            }
+        }
+        
+    }
+    @media (max-width: 1250px) {
+        .top{
+            right: 4.5dvh;
+            scale: 0.9;
+            padding: 10px;
+            top: 7px;
+        }
+    }
+    @media (max-width: 500px) {
+        .top{
+            right: 1dvh;
+            scale: 0.8;
+            padding: 10px;
+            top: 0;
+        }
+    }
+
+   
+}
+
+
+.area1{
+    width: 100%;
+    // height: 100vh;
+    display:flex;
+    overflow: hidden;
+    .left1{
+        display: block;
+        width: 8.75%;
+    }
+    @media (max-width: 1250px) {
+        .left1{
+            display: none;
+        }
+    }
+    
+    .right1{ 
+        // width: 91.25%;
+        // height: 100dvh;
+        background:$color2;
+        // overflow: hidden;
+        .carousel-inner{
+            position: relative;
+            .carousel-item{
+                height: 100dvh;
+                width: 100dvw;
+            }
+            @media (max-width: 1250px) {
+                .carousel-item{
+                    height: auto;
+                }
+            }
+            .carousel-indicators{
+                position: absolute;
+                // top:46dvw ;
+                bottom: 0;
+            }
+        }
+    }
+}
+
+.area2{
+    width: 100%;
+    height: 350dvh;
+    display: flex;
+    overflow: hidden;
+    .left2{
+        display: block;
+        width: 8.75%;
+        height: 350dvh; 
+        background:transparent ;
+    }
+    @media (max-width: 1250px) {
+        .left2{
+            display: none;
+        }
+
+    } 
+
+    .right2{
+        width: 91.25%; 
+        height: 360dvh; 
+        background: #4b4b4b; 
+        background-image:linear-gradient(to top,$color2,$color4); 
+        
+        //關於我們
+        .area2top{ 
+            display: flex; 
+            width: 100%; 
+            height: 105dvh; 
+            justify-content: center;  
+            position: relative; 
+            background-image: url(./img/介紹.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: right top;
+            
+            //文字介紹區
+            .textbox{
+                position: absolute;
+                left:0 ;
+                width: 300px;
+                height: 73dvh;
+                background: $color2;
+                padding: 69px 35px 0;
+                h2{
+                    font-family: "Courier Prime", monospace;
+                    color: $color4;
+                    font-size: 29px;
+                }
+                p{
+                    font-family: "Courier Prime", monospace;
+                    display: block;
+                    margin-top: 30px;
+                    color: $color4;
+                }
+                
+            }
+            //文字區 RWD
+            @media (max-width: 1250px) {
+                .textbox{
+                    scale: 0.7;
+                    left: auto;
+                    padding-top: 26px;
+                    height: auto;
+                    width: 80%;
+                    bottom: -1dvh;
+                    font-size: large;
+                    background-color: #edededd8;
+                    
+                }
+        
+            } 
+            @media (max-width: 500px) {
+                .textbox{
+                    scale: 0.5;
+                    width: auto;
+                    bottom: -6dvh;
+                }
+            }
+        }
+        //圖片 RWD
+        @media (max-width: 1250px) {
+            .area2top{
+                overflow-x: hidden;
+                background-size: cover;
+                background-position: left;
+                height: 88dvh;
+                width: 100dvw;
+            }
+    
+        } 
+        @media (max-width: 500px) {
+            .area2top{
+                background-position: -19dvw ;
+                height: 61dvh;
+            }
+    
+        }
+
+    
+        //熱門商品區
+        .area2bottom{
+            display: block;
+            .one{
+                display: flex;
+                width: 100%;
+                height: 80dvh;
+                .product1{
+                    width:50% ;
+                    position: relative;
+                    margin: 6dvh 10dvh;
+                    a{
+                        text-decoration:none;
+                        color: $color2;
+                        font-family: "Courier Prime", monospace;
+                        font-size: 18px;
+                    }
+                    
+                    .img{
+                        display: block;
+                        width: 445px;
+                        height: 534px;
+                        background-image: url(./img/沙發1.jpg);
+                        background-repeat: no-repeat;
+                        background-size: cover;                       
+                        .more{
+                            // display: block;
+                            width: 445px;
+                            height: 534px;
+                            background-color: $color5;
+                            opacity: 0;
+                            font-size: 25px;
+                            text-align: center;
+                            line-height: 534px;
+                            transition: 1s;
+                            &:hover{
+                                opacity: 0.6;
+                            }
+                        }
+                        
+
+                        transition: 1s;
+                        &:hover{
+                            scale: 1.09;
+                        }
+                    }
+
+                    
+                    
+                    //滑動顯示的另一種用法
+                    // .img:hover .more{
+                    //     display: block;
+                    // }
+                    .money{
+                        position: absolute;
+                        right: 0;
+                        font-size: 15px;
+                    }
+                    
+                }
+
+                .product2{
+                    display: block;
+                    width:50%;
+                    position: relative; 
+                    margin-top: 14dvh ;
+                    margin-left: 15dvh;
+                    a{
+                        text-decoration:none;
+                        color: $color2;
+                        font-family: "Courier Prime", monospace;
+                        font-size: 18px;
+                    }
+                    
+                    .img{
+                        display: block;
+                        width:672px;
+                        height: 448px;
+                        background-image: url(./img/遊戲台.jpg);
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        
+                        .more{
+                            display: block;
+                            width:672px;
+                            height: 448px;
+                            background-color: $color5;
+                            opacity: 0;
+                            font-size: 25px;
+                            text-align: center;
+                            line-height: 448px;
+                            transition: 1s;
+                            &:hover{
+                                opacity: 0.6;
+                            }
+                        }
+                        
+
+                        transition: 1s;
+                        &:hover{
+                            scale: 1.098;
+                        }
+                    }
+
+                    .money{
+                        position: absolute;
+                        right: 0;
+                        font-size: 15px;
+                    }
+                    
+                } 
+            }
+                
+            .two{
+                display: flex;
+                width: 100%;
+                height: 80dvh;
+                .product3{
+                    width:724px ;
+                    position: relative;
+                    margin: 15dvh 0dvh;
+                    a{
+                        text-decoration:none;
+                        color: $color1;
+                        font-family: "Courier Prime", monospace;
+                        font-size: 18px;
+                    }
+                    
+                    .img{
+                        display: block;
+                        width: 724px;
+                        height: 419px;
+                        background-image: url(./img/西洋棋.jpg);
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        .more{
+                            width: 724px;
+                            height: 419px;
+                            background-color: $color5;
+                            opacity: 0;
+                            font-size: 25px;
+                            text-align: center;
+                            line-height: 419px;
+                            transition: 1s;
+                            &:hover{
+                                opacity: 0.6;
+                            }
+                        }
+                        
+                        transition: 1s;
+                        &:hover{
+                            scale: 1.09;
+                        }
+                    }
+                    
+
+
+                    .money{
+                        position: absolute;
+                        right: 0;
+                        font-size: 15px;
+                    }
+                    
+                }
+
+                .product4{
+                    display: block;
+                    width:420px;
+                    position: relative; 
+                    margin-top: 4dvh;
+                    margin-left: 20dvh;
+                    a{
+                        text-decoration:none;
+                        color: $color1;
+                        font-family: "Courier Prime", monospace;
+                        font-size: 18px;
+                    }
+                    .img{
+                        display: block;
+                        width: 420px;
+                        height: 600px;
+                        background-image: url(./img/綠椅.jpg);
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        .more{
+                            width: 420px;
+                            height: 600px;
+                            background-color: $color5;
+                            opacity: 0;
+                            font-size: 25px;
+                            text-align: center;
+                            line-height: 600px;
+                            transition: 1s;
+                            &:hover{
+                                opacity: 0.6;
+                                
+                            }
+                        }
+                        transition: 1s;
+                        &:hover{
+                            scale: 1.098;
+                        }
+                    }
+                    
+                    .money{
+                        position: absolute;
+                        right: 0;
+                        font-size: 15px;
+                    }
+                }          
+            }
+            
+            .three{
+                display: flex;
+                width: 100%;
+                height: 80dvh;
+                .product5{
+                    width:430px ;
+                    position: relative;
+                    margin-top: 7dvh;
+                    margin-left: 5dvh;
+                    &:hover a{
+                        color: $color1;
+                    }
+                    a{
+                        text-decoration:none;
+                        color: $color4;
+                        font-family: "Courier Prime", monospace;
+                        font-size: 18px;
+                        transition: 1s;
+                    }
+                    
+                    .img{
+                        display: block;
+                        width: 430px;
+                        height: 550px;
+                        background-image: url(./img/小椅6.jpg);
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        .more{
+                            width: 430px;
+                            height: 550px;
+                            background-color: $color5;
+                            opacity: 0;
+                            font-size: 25px;
+                            text-align: center;
+                            line-height: 550px;
+                            transition: 1s;
+                            &:hover{
+                                opacity: 0.6;
+                                color:$color1;
+                            }
+                        }
+                        
+                        transition: 1s;
+                        &:hover{
+                            scale: 1.098;
+                        }
+                    }
+                    
+                    .money{
+                        position: absolute;
+                        right: 0;
+                        font-size: 15px;
+                    }
+                    
+                }
+                
+                .product6{
+                    display: block;
+                    width:561px;
+                    position: relative; 
+                    margin-top: 20dvh;
+                    margin-left: 20dvh;
+                    &:hover a{
+                        color: $color1;
+                    }
+                    a{
+                        text-decoration:none;
+                        color: $color4;
+                        font-family: "Courier Prime", monospace;
+                        font-size: 18px;
+                        transition: 1s;
+                    }
+                    .img{
+                        display: block;
+                        width: 561px;
+                        height: 374px;
+                        background-image: url(./img/藍椅.jpg);
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        .more{
+                            width: 561px;
+                            height: 374px;
+                            background-color: $color5;
+                            opacity: 0;
+                            font-size: 25px;
+                            text-align: center;
+                            line-height: 374px;
+                            transition: 1s;
+                            &:hover{
+                                opacity: 0.6;
+                                color:$color1;
+                            }
+                        }
+                        transition: 1s;
+                        &:hover{
+                            scale: 1.13;
+                        }
+                    }
+                    
+
+                    .money{
+                        position: absolute;
+                        right: 0;
+                        font-size: 15px;
+                        
+                    }
+                }
+                
+            }
+        }
+        @media (max-width: 1250px) {
+            .area2bottom{
+                display: none;
+            }
+            
+            
+        }
+        .phone{
+            display: none;
+            .area2bottomphone{
+                display: flex;
+                flex-wrap: wrap;
+                
+                .a{
+                    width: 30%;
+                }
+                .b{
+                    width: 70%;
+                }
+                .c{
+                    width: 70%;
+                }
+                .d{
+                    width: 30%;
+                }
+                .e{
+                    width: 40%;
+                }
+                .f{
+                    width: 60%;
+                }
+            }
+        }
+        @media (max-width: 1250px) {
+            .phone{
+                display: block;       
+            }
+            
+        }
+    }
+    @media (max-width: 1250px) {
+        .right2{
+            width: 100%;
+        }
+        
+    }
+}
+@media (max-width: 1250px) {
+    .area2{
+        height:230dvw ;
+        z-index: 0;
+    }
+    
+}
+
+
+.area3{
+    z-index:2;
+    position: relative;  
+    width: 100%;
+    height: 40dvh;
+    background:$color2 ;
+    //--------------------------------
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+    
+
+    //橫向滑動
+    .container {
+        max-width: 1200px;
+        width: 95%;
+        .slider-scrollbar {
+            height: 24px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            .scrollbar-track {
+                background: #ccc;
+                width: 100%;
+                height: 2px;
+                display: flex;
+                align-items: center;
+                border-radius: 4px;
+                position: relative;
+            }
+            &:hover .scrollbar-track {
+                height: 2.5px;
+            }
+            .scrollbar-thumb {
+                position: absolute;
+                background:$color4;
+                top: 0;
+                bottom: 0;
+                width: 50%;
+                height: 100%;
+                cursor: grab;
+                border-radius: inherit;
+                &:active {
+                    cursor: grabbing;
+                    height: 4px;
+                    top: -2px;
+                }
+                ::after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    top: -10px;
+                    bottom: -10px;
+                }
+            }
+        }
+        
+    }
+    .slider-wrapper {
+        position: relative;
+        .slide-button {  //左右箭頭樣式
+            font-family: "Courier Prime", monospace;
+            position: absolute;
+            top: 21%;
+            outline: none;
+            border: none;
+            height: 50px;
+            width: 50px;
+            z-index: 5;
+            color: $color4;
+            display: flex;
+            cursor: pointer;
+            font-size: 1.2rem;
+            background: $color1;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            transform: translateY(-50%);
+            transition: 0.3s;
+            &:hover {
+                background: $color2;
+                font-size: 1.5rem;
+            }
+        }
+        .image-list {
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            gap: 18px;
+            font-size: 0;
+            list-style: none;
+            margin-bottom: 30px;
+            overflow-x: auto;
+            scrollbar-width: none;
+            ::-webkit-scrollbar {
+                display: none;
+            }
+            .image-item {
+                width: 325px;
+                height: 400px;
+                object-fit: cover;
+                transition: 1s;
+                
+                &:hover{
+                    display: block;
+                    width: 422.5px;
+                    height: 520px;
+                }
+                
+            }
+            
+        }
+        
+    }
+    .slider-wrapper .slide-button#prev-slide {
+        left: -25px;
+        display: none;
+    }
+    .slider-wrapper .slide-button#next-slide {
+        right: -25px;
+    }
+    
+    
+    @media only screen and (max-width: 1223px) {
+        .slider-wrapper .slide-button {
+          display: none !important;
+        }
+        .slider-wrapper .image-list {
+          gap: 10px;
+          margin-bottom: 15px;
+          scroll-snap-type: x mandatory;
+        }
+        .slider-wrapper .image-list .image-item {
+          width: 220px;
+          height: 270px;
+          &:hover{
+            width: 220px;
+            height: 270px;
+            
+            }
+        }
+        .slider-scrollbar .scrollbar-thumb {
+          width: 20%;
+        }
+        
+    }
+    @media only screen and (max-width: 500px) {
+        
+        
+        .slider-wrapper .image-list .image-item {
+          width: 163px;
+          height: 186px;
+          &:hover{
+            width: 163px;
+            height: 186px;
+            
+            }
+        }
+        .slider-scrollbar .scrollbar-thumb {
+          width: 20%;
+        }
+        
+    }
+
+}
+@media (max-width:1023px) {
+    .area3{
+        z-index: 0;
+        height: 54vh;
+        min-height: 54dvw;
+    }
+
+}
+
+
+
+.area4{
+    z-index:2;
+    position: relative;  
+    width: 100%;
+    height: 50dvh;
+    background: $color1;
+    padding: 30px;
+    
+    img{
+        height: 50px;  
+    }
+    .text{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 8dvh;
+        dl{
+            
+            dt{
+                font-family: "Courier Prime", monospace;
+                font-size: 18px;
+                font-weight: 700;
+                color: $color4;
+            }
+            dd{
+                font-family: "Courier Prime", monospace;
+                font-size: 14px;
+                line-height: 14px;
+                margin-top: 1.5dvh;
+                a{
+                    color: $color4;
+                    &:hover{
+                        color: rgb(117, 184, 238);
+                    }
+                }
+            }
+            
+        }
+
+    }
+    p{
+        height: 20px;
+        font-family: "Courier Prime", monospace;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        margin-top: 70px;
+        color: $color4;
+    }
+
+    @media (max-width: 750px) {
+        .text{
+         flex-wrap: wrap;
+        }
+        dl{
+         width: 51%;
+         margin-top: 20px;
+        }
+        
+    }
+    @media (max-width: 500px) {
+       .text{
+        flex-wrap: wrap;
+       }
+       dl{
+        width: 70%;
+        margin-top: 20px;
+       }
+       
+    }
+
+}
+
+.goTop{
+    z-index: 4;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    transform: translateX(0);
+    transition: transform 0.2s;
+    //圖示隱藏
+    &.hide {
+        transform: translateX(120%);
+    }
+
+    .goTopBtn {
+        display: block;
+        text-align: center;
+        background-color: transparent;
+        outline: none;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        border-radius: 15px;
+        border: 1px solid $color4;
+        margin: 0 30px 25px 0;
+        
+        .fa-solid {
+            color: $color4;
+            line-height: 30px;
+            
+        }
+        
+        transition: 0.7s;
+        &:hover{
+            scale: 1.09;
+        
+        }
+    }
+}
+
